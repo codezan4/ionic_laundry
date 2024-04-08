@@ -1,0 +1,75 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="parent-logo">
+      <ion-img src="assets/img/logo.png" class="logo"></ion-img>
+    </div>
+    <h1 class="ion-text-center fw-bold">Pendaftaran</h1>
+    <div class="form">
+      <ion-list class="list-input">
+        <ion-item class="">
+          <ion-input labelPlacement="floating" type="text">
+            <div slot="label">
+              Nama Lengkap <ion-text color="danger">*</ion-text>
+            </div>
+          </ion-input>
+        </ion-item>
+        <ion-item class="">
+          <ion-input labelPlacement="floating" type="tel">
+            <div slot="label">
+              Nomor Handphone <ion-text color="danger">*</ion-text>
+            </div>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-textarea
+            label="Alamat"
+            labelPlacement="floating"
+            [counter]="true"
+            maxlength="255"
+          ></ion-textarea>
+        </ion-item>
+        <ion-item>
+          <ion-input
+            labelPlacement="stacked"
+            label="Kata Sandi"
+            placeholder="Masukan kata sandi"
+          >
+            <ion-icon
+              slot="start"
+              name="lock-closed"
+              aria-hidden="true"
+            ></ion-icon>
+            <ion-button fill="clear" slot="end" aria-label="Show/hide">
+              <ion-icon
+                slot="icon-only"
+                name="eye"
+                aria-hidden="true"
+              ></ion-icon>
+            </ion-button>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input
+            labelPlacement="stacked"
+            label="Konfirmasi Kata Sandi"
+            placeholder="Masukan konfirmasi kata sandi"
+          >
+            <ion-icon
+              slot="start"
+              name="lock-closed"
+              aria-hidden="true"
+            ></ion-icon>
+            <ion-button fill="clear" slot="end" aria-label="Show/hide">
+              <ion-icon
+                slot="icon-only"
+                name="eye"
+                aria-hidden="true"
+              ></ion-icon>
+            </ion-button>
+          </ion-input>
+        </ion-item>
+      </ion-list>
+      <ion-button expand="block" class="mt-1" shape="round">Daftar</ion-button>
+    </div>
+  </div>
+</ion-content>

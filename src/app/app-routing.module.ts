@@ -19,6 +19,13 @@ const routes: Routes = [
         (m) => m.SplashscreenPageModule
       ),
   },
+  {
+    path: 'auth/register',
+    loadChildren: () =>
+      import('./auth/register/register.module').then(
+        (m) => m.RegisterPageModule
+      ),
+  },
 ];
 
 @NgModule({
